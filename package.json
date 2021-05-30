@@ -1,0 +1,64 @@
+{
+  "name": "todo-example",
+  "version": "0.0.1",
+  "description": "todo-example - An Anansi project",
+  "scripts": {
+    "lint": "eslint src --ext .ts,.tsx",
+    "format": "npm run lint --fix",
+    "test:type": "tsc",
+    "start": "webpack serve --mode=development",
+    "start:prod": "serve dist",
+    "build": "webpack --mode=production",
+    "build:analyze": "webpack --mode=production --env analyze",
+    "build:profile": "webpack --mode=production --env profile",
+    "test:pkg": "webpack --env check=nobuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Rest-Hooks/todo-example.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Rest-Hooks/todo-example/issues"
+  },
+  "homepage": "https://github.com/Rest-Hooks/todo-example#readme",
+  "keywords": [
+    "anansi"
+  ],
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "private": true,
+  "license": "BSD-3-Clause",
+  "devDependencies": {
+    "eslint": "^7.0.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.2.1",
+    "@babel/core": "7.14.3",
+    "@anansi/babel-preset": "2.6.3",
+    "@anansi/eslint-plugin": "0.11.10",
+    "@anansi/browserslist-config": "1.2.0",
+    "typescript": "4.3.2",
+    "react-test-renderer": "17.0.2",
+    "react-refresh": "0.10.0",
+    "serve": "11.3.2",
+    "@types/react": "17.0.8",
+    "@types/react-dom": "17.0.5",
+    "@rest-hooks/test": "4.1.4",
+    "webpack-cli": "4.7.0",
+    "webpack-dev-server": "3.11.2",
+    "@linaria/core": "3.0.0-beta.4",
+    "@linaria/react": "3.0.0-beta.4",
+    "@linaria/babel-preset": "3.0.0-beta.4",
+    "@linaria/shaker": "3.0.0-beta.4",
+    "webpack": "5.38.1",
+    "@anansi/webpack-config": "7.1.4"
+  },
+  "dependencies": {
+    "rest-hooks": "5.1.1",
+    "@rest-hooks/rest": "2.1.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "@anansi/generator-js": {
+    "githubOrg": "Rest-Hooks",
+    "rootPath": "src",
+    "assetPath": "dist",
+    "appName": "todo-example",
+    "githubDomain": "github.com",
+    "testing": false,
+    "features": [],
+    "badges": "",
+    "spa": true,
+    "webpack": true,
+    "reactMode": "legacy",
+    "style": "linaria"
+  }
+}
